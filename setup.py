@@ -18,17 +18,17 @@ import io
 
 install_requires = [
     "google-auth-oauthlib >= 0.3.0, < 1.0.0",
-    "google-api-core >= 2.10.1, <= 2.11.0",
+    "google-api-core >= 2.8.1, < 3.0.0dev, !=2.0., != 2.1., !=2.2., !=2.3.0",
     "googleapis-common-protos >= 1.56.4, < 2.0.0",
     # NOTE: Source code for grpcio and grpcio-status exist in the same
     # grpc/grpc monorepo and thus these two dependencies should always
     # have the same version range.
     "grpcio >= 1.38.1, < 2.0.0",
     "grpcio-status >= 1.38.1, < 2.0.0",
-    "proto-plus >= 1.22.1, < 1.23",
+    "proto-plus == 1.19.6",
     "PyYAML >= 5.1, < 7.0",
     "setuptools >= 40.3.0",
-    "protobuf >= 4.21.5",
+    "protobuf >= 3.12.0, <= 3.20.0, !=3.18., !=3.19.*",
 ]
 
 with io.open("README.rst", "r", encoding="utf-8") as readme_file:
